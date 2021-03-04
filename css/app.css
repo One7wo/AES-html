@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: #e2e2e2;
+}
+
+.wrapper {
+  width: 700px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options {
+  margin-right: 30px;
+}
+
+.manager-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.manager-form .key-input {
+  margin-bottom: 18px;
+}
+
+.manager-form .key-input input {
+  width: 100%;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #DDDAE7;
+}
+
+.manager-form .key-input input::-webkit-input-placeholder {
+  color: #918D9A;
+}
+
+.manager-form .key-input input:-ms-input-placeholder {
+  color: #918D9A;
+}
+
+.manager-form .key-input input::-ms-input-placeholder {
+  color: #918D9A;
+}
+
+.manager-form .key-input input::placeholder {
+  color: #918D9A;
+}
+
+.manager-form .key-input input:focus {
+  border-color: #c1bbd3;
+}
+
+.manager-form button {
+  background: #5250c0;
+  color: #ffffff;
+  font-size: 22px;
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+.manager-form button:hover {
+  background: #4341b5;
+}

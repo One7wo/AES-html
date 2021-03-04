@@ -1,0 +1,71 @@
+// === Common ===
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background: #e2e2e2;
+}
+.wrapper{
+    width: 700px;
+    height: 500px;
+    // margin: 0 auto;
+    background:#ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+// ===  / Common ===
+
+// === Main form ===
+
+.wrapper{
+    display: flex;
+}
+
+.options{
+    margin-right: 30px;
+}
+
+.manager-form{
+    display: flex;
+    flex-direction: column;
+    .key-input{
+        margin-bottom: 18px;
+            input{
+                width: 100%;
+                margin: 0;
+                padding: 16px 20px;
+                outline: none;
+                border-radius: 4px;
+                border: 1px solid #DDDAE7;
+                &::placeholder {
+                    color: #918D9A;
+                }
+                &:focus {
+                    border-color: darken(#DDDAE7, 10%);
+                }
+            }
+        }
+    button{
+        background: #5250c0;
+        color: #ffffff;
+        font-size: 22px;
+        border-radius: 8px;
+        border: none;
+        height: 30px;
+        cursor: pointer;
+
+        &:hover{
+            background: darken(#5250c0, 5%);
+        }
+    }
+}
+
+
+// === / Main form ===
