@@ -1,71 +1,320 @@
 // === Common ===
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: "Ubuntu", sans-serif;
 }
-body{
+body {
     background: #e2e2e2;
 }
-.wrapper{
-    width: 700px;
-    height: 500px;
+.wrapper {
+    width: 560px;
+    height: 600px;
     // margin: 0 auto;
-    background:#ffffff;
-    border-radius: 8px;
+    background: #ffffff;
+    border-radius: 4px;
     padding: 30px;
     left: 50%;
     top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
 }
+.text-m {
+    font-weight: 500;
+}
+.text-r {
+    font-weight: 400;
+}
+.text-l {
+    font-weight: 300;
+}
+
+.password {
+    -webkit-text-security: disc !important;
+}
+
+.hr {
+     padding: 0;
+  border: 0;
+    border-top: 1px solid #ececee;
+    width: 70%;
+    margin: 35px auto;
+}
 // ===  / Common ===
 
 // === Main form ===
 
-.wrapper{
-    display: flex;
+.wrapper {
+    // display: flex;
+    padding: 20px;
 }
 
-.options{
-    margin-right: 30px;
-}
-
-.manager-form{
-    display: flex;
-    flex-direction: column;
-    .key-input{
-        margin-bottom: 18px;
-            input{
-                width: 100%;
-                margin: 0;
-                padding: 16px 20px;
-                outline: none;
-                border-radius: 4px;
-                border: 1px solid #DDDAE7;
-                &::placeholder {
-                    color: #918D9A;
-                }
-                &:focus {
-                    border-color: darken(#DDDAE7, 10%);
-                }
-            }
-        }
-    button{
-        background: #5250c0;
-        color: #ffffff;
-        font-size: 22px;
-        border-radius: 8px;
-        border: none;
-        height: 30px;
-        cursor: pointer;
-
-        &:hover{
-            background: darken(#5250c0, 5%);
+.header {
+    &__logo {
+        display: flex;
+        align-items: center;
+        .text-m {
+            margin-left: 10px;
         }
     }
 }
 
+.content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    .prev {
+        cursor: pointer;
+        width: 10%;
+    }
+    .next {
+        cursor: pointer;
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__space {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        // overflow-x: scroll;
+        // padding-bottom: 20px;
+        // border-bottom: 1px solid #d3d3d3;
+        .tiket {
+            cursor: pointer;
+            padding: 10px;
+            width: 160px;
+            height: 120px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-right: 10px;
+
+            &:hover{
+                border: 1px solid #000;
+            }
+
+            &__key {
+                margin-top: 10px;
+
+                .password {
+                    margin-left: 18px;
+                }
+            }
+
+            &__button {
+                margin-top: 20px;
+                width: 100%;
+                height: 25px;
+                background: rgb(255, 255, 255);
+                text-decoration: none;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background: #0a0a0a;
+                    color: #ffffff;
+                }
+                &:active {
+                    background: #252525;
+                }
+            }
+        }
+        .tiket:last-child {
+            margin-right: 0px;
+        }
+        .add-tiket {
+            cursor: pointer;
+            // margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            // background: rgb(255, 240, 31);
+            border: 1px solid #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 100%;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin: 0 auto;
+            }
+
+            &:hover {
+                background: #000;
+                img {
+                    filter: invert(1);
+                }
+            }
+            &:active {
+                background: #252525;
+            }
+        }
+    }
+}
+
+.tiket-info {
+    &__name {
+        display: flex;
+        margin-left: 10px;
+        .name {
+            margin-left: 20px;
+        }
+    }
+    .tiket-card{
+        margin-top: 15px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__key {
+        // margin-top: 15px;
+        display: flex;
+        align-items: center;
+
+        .key {
+            margin-left: 10px;
+            // background: #4e5de4;
+            // border: 1px solid #4e5de4;
+            // color: #ffffff;
+            border-radius: 5px;
+            padding: 3px;
+            // cursor: pointer;
+            
+        }
+        .copy {
+            cursor: pointer;
+            margin-left: 40px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 1px 16px;
+            img {
+                margin-top: 5px;
+            }
+            &:hover {
+                background: #000;
+                img {
+                    filter: invert(1);
+                }
+            }
+            &:active {
+                background: #252525;
+            }
+        }
+        .refresh {
+            cursor: pointer;
+            margin-left: 15px;
+
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 1px 12px;
+
+            img {
+                margin-top: 5px;
+            }
+            &:hover {
+                background: #000;
+                img {
+                    filter: invert(1);
+                    transform: rotate(180deg);
+                    transition: 1s;
+                }
+            }
+            &:active {
+                background: #252525;
+            }
+        }
+    }
+    &__generate {
+        margin-top: 15px;
+        display: flex;
+        input {
+            height: 26px;
+            margin: 0;
+            padding: 16px 20px;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            &::placeholder {
+                color: #918d9a;
+            }
+            &:focus {
+                border-color: darken(#eee, 10%);
+            }
+        }
+
+        .generate {
+            margin-left: 13px;
+            padding: 0px 10px;
+            background: rgb(255, 255, 255);
+            text-decoration: none;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background: #0a0a0a;
+                color: #ffffff;
+            }
+            &:active {
+                background: #252525;
+            }
+        }
+    }
+
+    &__info {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+// .options{
+//     margin-right: 30px;
+// }
+
+// .manager-form{
+//     display: flex;
+//     flex-direction: column;
+//     .key-input{
+//         margin-bottom: 18px;
+//             input{
+//                 width: 100%;
+//                 margin: 0;
+//                 padding: 16px 20px;
+//                 outline: none;
+//                 border-radius: 4px;
+//                 border: 1px solid #DDDAE7;
+//                 &::placeholder {
+//                     color: #918D9A;
+//                 }
+//                 &:focus {
+//                     border-color: darken(#DDDAE7, 10%);
+//                 }
+//             }
+//         }
+//     button{
+//         background: #5250c0;
+//         color: #ffffff;
+//         font-size: 22px;
+//         border-radius: 8px;
+//         border: none;
+//         height: 30px;
+//         cursor: pointer;
+
+//         &:hover{
+//             background: darken(#5250c0, 5%);
+//         }
+//     }
+// }
 
 // === / Main form ===

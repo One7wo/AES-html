@@ -5,27 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <div class="wrapper">
-    <div class="options">
-        <select>
-            <option>Default</option>
-            <option>Twitter</option>
-            <option>VK</option>
-            <option>Instagram</option>
-            <option>Telegram</option>
-            <option>Google</option>
-            <option>Yandex</option>
-          </select>
-    </div>
-    <div class="manager-form">
-        <div class="key-input">
-            <input type="password" placeholder="Your unique key">
+    <div class="header">
+        <div class="header__logo">
+            <img src="img/access.png" alt="">
+            <div class="text-m">Pepega</div>
         </div>
-        <button>Create</button>
+        
     </div>
+    <div class="content">
+        <div class="prev">
+           <img src="img/next.png" alt="" style="transform: rotate(180deg);">
+ 
+        </div>
+        <div class="content__space">
+            <div class="tiket">
+                <div class="tiket__name text-r">Name: <span class="text-l">Twitter</span></div>
+                <div class="tiket__key text-r">Key: <span class="text-l password">nfjasdnfans3</span></div>
+                <button class="tiket__button">Copy key</button>
+            </div>
+            
+            <div class="tiket">
+                <div class="tiket__name text-r">Name: <span class="text-l">Twitter</span></div>
+                <div class="tiket__key text-r">Key: <span class="text-l password">nfjasdnfans3</span></div>
+                <button class="tiket__button">Copy key</button>
+            </div>
+            
+            
+            
+            <div class="add-tiket">
+                <img src="img/add.png" alt="">
+            </div>
+        </div>
+        
+        <div class="next">
+            <img src="img/next.png" alt=""> 
+        </div>
+       
+    </div>
+    <hr class="hr" />
+
+    <div class="tiket-info">
+        <div class="tiket-info__name">
+            <div class="text-r">Name:</div>
+            <div class="name text-l">Twitter</div> 
+        </div>
+
+        <div class="tiket-card">
+            <div class="tiket-info__key">
+                <div class="text-r">Key:</div>
+                <div class="key">nfjasdnfans3np3pjnz1</div>
+                <div class="copy">
+                    <img src="img/copy.png" alt="">
+                </div>
+                <div class="refresh">
+                    <img src="img/refresh.png" alt="">
+                </div>
+            </div>
+
+            <div class="tiket-info__generate">
+                <input type="password" placeholder="Your word">
+                <button class="generate">Create password</button>
+            </div>
+        </div>
+
+        
+        
+
+
+
+        <div class="tiket-info__info">
+            <div class="text-r">Additional Information:</div>
+            <div class="info text-l">Login</div>
+        </div>
+        
+        
+        
+    </div>
+
+  
 </div>
 </body>
 </html>
